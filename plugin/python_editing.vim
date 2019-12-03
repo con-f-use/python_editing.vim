@@ -11,8 +11,9 @@ set foldmethod=expr
 set foldexpr=PythonFoldExpr(v:lnum)
 set foldtext=PythonFoldText()
 
-map <buffer> f za
-map <buffer> F :call ToggleFold()<CR>
+" map <buffer> f za  " I use the f movement very often, za is fine
+" map <buffer> F :call ToggleFold()<CR>
+map <buffer> zA :call ToggleFold()<CR>
 let b:folded = 1
 
 function! ToggleFold()
